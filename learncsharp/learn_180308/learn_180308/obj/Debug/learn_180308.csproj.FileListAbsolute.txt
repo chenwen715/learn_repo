@@ -1,0 +1,8 @@
+D:\xuex\learn_180308\learn_180308\bin\Debug\learn_180308.exe.config
+D:\xuex\learn_180308\learn_180308\bin\Debug\learn_180308.exe
+D:\xuex\learn_180308\learn_180308\bin\Debug\learn_180308.pdb
+D:\xuex\learn_180308\learn_180308\obj\Debug\learn_180308.csprojResolveAssemblyReference.cache
+D:\xuex\learn_180308\learn_180308\obj\Debug\learn_180308.exe
+D:\xuex\learn_180308\learn_180308\obj\Debug\learn_180308.pdb
+D:\xuex\learn_180308\learn_180308\obj\Debug\learn_180308.Form1.resources
+D:\xuex\learn_180308\learn_180308\obj\Debug\learn_180308.csproj.GenerateResource.Cache

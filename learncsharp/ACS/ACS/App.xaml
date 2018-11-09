@@ -1,0 +1,16 @@
+﻿<Application x:Class="ACS.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ACS"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Dictionary.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="TaskManager.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="Organization.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="RunData.xaml"></ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

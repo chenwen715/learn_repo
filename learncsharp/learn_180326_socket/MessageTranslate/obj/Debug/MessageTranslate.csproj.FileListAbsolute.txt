@@ -1,0 +1,4 @@
+D:\xuex\learn_180326_socket\MessageTranslate\bin\Debug\MessageTranslate.dll
+D:\xuex\learn_180326_socket\MessageTranslate\bin\Debug\MessageTranslate.pdb
+D:\xuex\learn_180326_socket\MessageTranslate\obj\Debug\MessageTranslate.dll
+D:\xuex\learn_180326_socket\MessageTranslate\obj\Debug\MessageTranslate.pdb

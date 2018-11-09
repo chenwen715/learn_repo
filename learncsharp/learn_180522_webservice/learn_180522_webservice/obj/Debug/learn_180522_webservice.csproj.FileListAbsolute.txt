@@ -1,0 +1,11 @@
+D:\xuex\learn_180522_webservice\learn_180522_webservice\bin\Debug\learn_180522_webservice.exe.config
+D:\xuex\learn_180522_webservice\learn_180522_webservice\bin\Debug\learn_180522_webservice.exe
+D:\xuex\learn_180522_webservice\learn_180522_webservice\bin\Debug\learn_180522_webservice.pdb
+D:\xuex\learn_180522_webservice\learn_180522_webservice\obj\Debug\learn_180522_webservice.csprojResolveAssemblyReference.cache
+D:\xuex\learn_180522_webservice\learn_180522_webservice\obj\Debug\learn_180522_webservice.Form1.resources
+D:\xuex\learn_180522_webservice\learn_180522_webservice\obj\Debug\learn_180522_webservice.Properties.Resources.resources
+D:\xuex\learn_180522_webservice\learn_180522_webservice\obj\Debug\learn_180522_webservice.csproj.GenerateResource.Cache
+D:\xuex\learn_180522_webservice\learn_180522_webservice\obj\Debug\learn_180522_webservice.exe
+D:\xuex\learn_180522_webservice\learn_180522_webservice\obj\Debug\learn_180522_webservice.pdb
+D:\xuex\learn_180522_webservice\learn_180522_webservice\bin\Debug\Newtonsoft.Json.xml
+D:\xuex\learn_180522_webservice\learn_180522_webservice\obj\Debug\learn_180522_webservice.csproj.ResolveComReference.cache

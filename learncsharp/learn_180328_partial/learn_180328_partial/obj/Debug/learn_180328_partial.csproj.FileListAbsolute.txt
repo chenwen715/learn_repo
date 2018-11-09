@@ -1,0 +1,6 @@
+D:\xuex\learn_180328_partial\learn_180328_partial\bin\Debug\learn_180328_partial.exe.config
+D:\xuex\learn_180328_partial\learn_180328_partial\bin\Debug\learn_180328_partial.exe
+D:\xuex\learn_180328_partial\learn_180328_partial\bin\Debug\learn_180328_partial.pdb
+D:\xuex\learn_180328_partial\learn_180328_partial\obj\Debug\learn_180328_partial.csprojResolveAssemblyReference.cache
+D:\xuex\learn_180328_partial\learn_180328_partial\obj\Debug\learn_180328_partial.exe
+D:\xuex\learn_180328_partial\learn_180328_partial\obj\Debug\learn_180328_partial.pdb

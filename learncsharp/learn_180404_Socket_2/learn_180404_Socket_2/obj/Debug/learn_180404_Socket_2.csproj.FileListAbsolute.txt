@@ -1,0 +1,13 @@
+D:\xuex\learn_180404_Socket_2\learn_180404_Socket_2\bin\Debug\learn_180404_Socket_2.exe.config
+D:\xuex\learn_180404_Socket_2\learn_180404_Socket_2\bin\Debug\learn_180404_Socket_2.exe
+D:\xuex\learn_180404_Socket_2\learn_180404_Socket_2\bin\Debug\learn_180404_Socket_2.pdb
+D:\xuex\learn_180404_Socket_2\learn_180404_Socket_2\obj\Debug\learn_180404_Socket_2.csprojResolveAssemblyReference.cache
+D:\xuex\learn_180404_Socket_2\learn_180404_Socket_2\obj\Debug\MainWindow.baml
+D:\xuex\learn_180404_Socket_2\learn_180404_Socket_2\obj\Debug\MainWindow.g.cs
+D:\xuex\learn_180404_Socket_2\learn_180404_Socket_2\obj\Debug\App.g.cs
+D:\xuex\learn_180404_Socket_2\learn_180404_Socket_2\obj\Debug\learn_180404_Socket_2_MarkupCompile.cache
+D:\xuex\learn_180404_Socket_2\learn_180404_Socket_2\obj\Debug\learn_180404_Socket_2.g.resources
+D:\xuex\learn_180404_Socket_2\learn_180404_Socket_2\obj\Debug\learn_180404_Socket_2.Properties.Resources.resources
+D:\xuex\learn_180404_Socket_2\learn_180404_Socket_2\obj\Debug\learn_180404_Socket_2.csproj.GenerateResource.Cache
+D:\xuex\learn_180404_Socket_2\learn_180404_Socket_2\obj\Debug\learn_180404_Socket_2.exe
+D:\xuex\learn_180404_Socket_2\learn_180404_Socket_2\obj\Debug\learn_180404_Socket_2.pdb

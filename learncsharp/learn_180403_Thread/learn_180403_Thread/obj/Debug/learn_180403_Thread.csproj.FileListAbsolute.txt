@@ -1,0 +1,6 @@
+D:\xuex\learn_180403_Thread\learn_180403_Thread\bin\Debug\learn_180403_Thread.exe.config
+D:\xuex\learn_180403_Thread\learn_180403_Thread\bin\Debug\learn_180403_Thread.exe
+D:\xuex\learn_180403_Thread\learn_180403_Thread\bin\Debug\learn_180403_Thread.pdb
+D:\xuex\learn_180403_Thread\learn_180403_Thread\obj\Debug\learn_180403_Thread.csprojResolveAssemblyReference.cache
+D:\xuex\learn_180403_Thread\learn_180403_Thread\obj\Debug\learn_180403_Thread.exe
+D:\xuex\learn_180403_Thread\learn_180403_Thread\obj\Debug\learn_180403_Thread.pdb

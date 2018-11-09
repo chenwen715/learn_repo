@@ -1,0 +1,6 @@
+D:\xuex\learn_180328_interface\learn_180328_interface\bin\Debug\learn_180328_interface.exe.config
+D:\xuex\learn_180328_interface\learn_180328_interface\obj\Debug\learn_180328_interface.csprojResolveAssemblyReference.cache
+D:\xuex\learn_180328_interface\learn_180328_interface\bin\Debug\learn_180328_interface.exe
+D:\xuex\learn_180328_interface\learn_180328_interface\bin\Debug\learn_180328_interface.pdb
+D:\xuex\learn_180328_interface\learn_180328_interface\obj\Debug\learn_180328_interface.exe
+D:\xuex\learn_180328_interface\learn_180328_interface\obj\Debug\learn_180328_interface.pdb

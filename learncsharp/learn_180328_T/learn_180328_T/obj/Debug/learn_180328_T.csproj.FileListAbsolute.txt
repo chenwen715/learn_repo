@@ -1,0 +1,6 @@
+D:\xuex\learn_180328_T\learn_180328_T\bin\Debug\learn_180328_T.exe.config
+D:\xuex\learn_180328_T\learn_180328_T\bin\Debug\learn_180328_T.exe
+D:\xuex\learn_180328_T\learn_180328_T\bin\Debug\learn_180328_T.pdb
+D:\xuex\learn_180328_T\learn_180328_T\obj\Debug\learn_180328_T.csprojResolveAssemblyReference.cache
+D:\xuex\learn_180328_T\learn_180328_T\obj\Debug\learn_180328_T.exe
+D:\xuex\learn_180328_T\learn_180328_T\obj\Debug\learn_180328_T.pdb

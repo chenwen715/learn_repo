@@ -1,0 +1,6 @@
+D:\xuex\learn_180412_tmp\learn_180412_tmp\bin\Debug\learn_180412_tmp.exe.config
+D:\xuex\learn_180412_tmp\learn_180412_tmp\bin\Debug\learn_180412_tmp.exe
+D:\xuex\learn_180412_tmp\learn_180412_tmp\bin\Debug\learn_180412_tmp.pdb
+D:\xuex\learn_180412_tmp\learn_180412_tmp\obj\Debug\learn_180412_tmp.csprojResolveAssemblyReference.cache
+D:\xuex\learn_180412_tmp\learn_180412_tmp\obj\Debug\learn_180412_tmp.exe
+D:\xuex\learn_180412_tmp\learn_180412_tmp\obj\Debug\learn_180412_tmp.pdb

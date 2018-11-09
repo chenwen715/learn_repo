@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <LinearGradientBrush x:Key="HHLGRed" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="Maroon" Offset="0"></GradientStop>
+        <GradientStop Color="#FFB81B2C" Offset="0.5"></GradientStop>
+
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="HHAst1" Color="#FFDDDDDD"></SolidColorBrush>
+    <SolidColorBrush x:Key="HHAst2" Color="#FFA0A0A0"></SolidColorBrush>
+
+    <Style x:Key="TitleButton">
+        <Setter Property="Control.Background" Value="{StaticResource HHLGRed}"></Setter>
+        <Setter Property="Control.Margin" Value="5"></Setter>
+        <Setter Property="Control.Foreground" Value="White"></Setter>
+        <Setter Property="Control.FontSize" Value="18"></Setter>
+        <Setter Property="Control.FontFamily" Value="Times New Roman"></Setter>
+    </Style>
+    <Style x:Key="TitleAreaStyle">
+        <Setter Property="Control.Background" Value="{StaticResource HHLGRed}"></Setter>
+    </Style>
+
+</ResourceDictionary>

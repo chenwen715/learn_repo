@@ -1,0 +1,6 @@
+D:\xuex\learn_180403_socket\learn_180403_socket\bin\Debug\learn_180403_socket.exe.config
+D:\xuex\learn_180403_socket\learn_180403_socket\bin\Debug\learn_180403_socket.exe
+D:\xuex\learn_180403_socket\learn_180403_socket\bin\Debug\learn_180403_socket.pdb
+D:\xuex\learn_180403_socket\learn_180403_socket\obj\Debug\learn_180403_socket.csprojResolveAssemblyReference.cache
+D:\xuex\learn_180403_socket\learn_180403_socket\obj\Debug\learn_180403_socket.exe
+D:\xuex\learn_180403_socket\learn_180403_socket\obj\Debug\learn_180403_socket.pdb

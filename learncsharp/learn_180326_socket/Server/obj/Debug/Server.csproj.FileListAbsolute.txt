@@ -1,0 +1,9 @@
+D:\xuex\learn_180326_socket\Server\bin\Debug\Server.exe.config
+D:\xuex\learn_180326_socket\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+D:\xuex\learn_180326_socket\Server\obj\Debug\Server.Form1.resources
+D:\xuex\learn_180326_socket\Server\obj\Debug\Server.Properties.Resources.resources
+D:\xuex\learn_180326_socket\Server\obj\Debug\Server.csproj.GenerateResource.Cache
+D:\xuex\learn_180326_socket\Server\bin\Debug\Server.exe
+D:\xuex\learn_180326_socket\Server\bin\Debug\Server.pdb
+D:\xuex\learn_180326_socket\Server\obj\Debug\Server.exe
+D:\xuex\learn_180326_socket\Server\obj\Debug\Server.pdb

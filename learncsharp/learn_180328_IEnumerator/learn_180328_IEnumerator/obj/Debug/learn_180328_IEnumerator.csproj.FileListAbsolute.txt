@@ -1,0 +1,6 @@
+D:\xuex\learn_180328_IEnumerator\learn_180328_IEnumerator\bin\Debug\learn_180328_IEnumerator.exe.config
+D:\xuex\learn_180328_IEnumerator\learn_180328_IEnumerator\bin\Debug\learn_180328_IEnumerator.exe
+D:\xuex\learn_180328_IEnumerator\learn_180328_IEnumerator\bin\Debug\learn_180328_IEnumerator.pdb
+D:\xuex\learn_180328_IEnumerator\learn_180328_IEnumerator\obj\Debug\learn_180328_IEnumerator.csprojResolveAssemblyReference.cache
+D:\xuex\learn_180328_IEnumerator\learn_180328_IEnumerator\obj\Debug\learn_180328_IEnumerator.exe
+D:\xuex\learn_180328_IEnumerator\learn_180328_IEnumerator\obj\Debug\learn_180328_IEnumerator.pdb

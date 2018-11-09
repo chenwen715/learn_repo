@@ -1,0 +1,32 @@
+D:\HuaHeng Project\HH_XinNing\code\AgvWCS\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\HuaHeng.Project.Model_XNAGV.csprojResolveAssemblyReference.cache
+D:\HuaHeng Project\HH_XinNing\code\AgvWCS\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\App.g.cs
+D:\HuaHeng Project\HH_XinNing\code\AgvWCS\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\HuaHeng.Project.Model_XNAGV_MarkupCompile.cache
+D:\HuaHeng Project\HH_XinNing\code\AgvWCS\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\MainWindow.g.cs
+D:\HuaHeng Project\HH_XinNing\code\AgvWCS\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\HuaHeng Project\HH_XinNing\code\AgvWCS\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\HuaHeng.Project.Model_XNAGV_MarkupCompile.lref
+D:\HuaHeng Project\HH_XinNing\code\AgvWCS\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\bin\Debug\HuaHeng.Project.Model_XNAGV.exe.config
+D:\HuaHeng Project\HH_XinNing\code\AgvWCS\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\bin\Debug\HuaHeng.Project.Model_XNAGV.exe
+D:\HuaHeng Project\HH_XinNing\code\AgvWCS\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\bin\Debug\HuaHeng.Project.Model_XNAGV.pdb
+D:\HuaHeng Project\HH_XinNing\code\AgvWCS\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\MainWindow.baml
+D:\HuaHeng Project\HH_XinNing\code\AgvWCS\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\HuaHeng.Project.Model_XNAGV.g.resources
+D:\HuaHeng Project\HH_XinNing\code\AgvWCS\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\HuaHeng.Project.Model_XNAGV.Properties.Resources.resources
+D:\HuaHeng Project\HH_XinNing\code\AgvWCS\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\HuaHeng.Project.Model_XNAGV.csproj.GenerateResource.Cache
+D:\HuaHeng Project\HH_XinNing\code\AgvWCS\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\HuaHeng.Project.Model_XNAGV.csproj.CoreCompileInputs.cache
+D:\HuaHeng Project\HH_XinNing\code\AgvWCS\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\HuaHeng.Project.Model_XNAGV.exe
+D:\HuaHeng Project\HH_XinNing\code\AgvWCS\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\HuaHeng.Project.Model_XNAGV.pdb
+D:\HuaHeng Project\HH_XinNing\code\AgvWCS\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\Dictionary.baml
+D:\HuaHeng Project\HH_XinNing\code\AgvWCS\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\Organization.baml
+D:\HuaHeng Project\HH_XinNing\code\AgvWCS\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\RunData.baml
+D:\HuaHeng Project\HH_XinNing\code\AgvWCS\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\TaskManager.baml
+C:\Users\think\Desktop\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\HuaHeng.Project.Model_XNAGV.csprojResolveAssemblyReference.cache
+C:\Users\think\Desktop\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\Dictionary.baml
+C:\Users\think\Desktop\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\Organization.baml
+C:\Users\think\Desktop\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\RunData.baml
+C:\Users\think\Desktop\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\TaskManager.baml
+C:\Users\think\Desktop\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\MainWindow.g.cs
+C:\Users\think\Desktop\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\App.g.cs
+C:\Users\think\Desktop\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\think\Desktop\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\HuaHeng.Project.Model_XNAGV_MarkupCompile.cache
+C:\Users\think\Desktop\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\HuaHeng.Project.Model_XNAGV_MarkupCompile.lref
+C:\Users\think\Desktop\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\HuaHeng.Project.Model_XNAGV.exe
+C:\Users\think\Desktop\HuaHeng.Project.Model_XNAGV\HuaHeng.Project.Model_XNAGV\obj\Debug\HuaHeng.Project.Model_XNAGV.pdb

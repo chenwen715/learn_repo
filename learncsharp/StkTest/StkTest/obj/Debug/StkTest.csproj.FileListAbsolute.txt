@@ -1,0 +1,32 @@
+c:\users\hhnt180\documents\visual studio 2017\Projects\StkTest\StkTest\bin\Debug\StkTest.exe
+c:\users\hhnt180\documents\visual studio 2017\Projects\StkTest\StkTest\bin\Debug\StkTest.pdb
+c:\users\hhnt180\documents\visual studio 2017\Projects\StkTest\StkTest\obj\Debug\StkTest.Properties.Resources.resources
+c:\users\hhnt180\documents\visual studio 2017\Projects\StkTest\StkTest\obj\Debug\StkTest.csproj.GenerateResource.Cache
+c:\users\hhnt180\documents\visual studio 2017\Projects\StkTest\StkTest\obj\Debug\StkTest.csproj.CoreCompileInputs.cache
+c:\users\hhnt180\documents\visual studio 2017\Projects\StkTest\StkTest\obj\Debug\StkTest.exe
+c:\users\hhnt180\documents\visual studio 2017\Projects\StkTest\StkTest\obj\Debug\StkTest.pdb
+C:\Users\HHNT180\Documents\Visual Studio 2017\Projects\StkTest\StkTest\obj\Debug\StkTest.Form1.resources
+C:\Users\Administrator.HHNT178\Desktop\STK测试资料\StkTest\StkTest\obj\Debug\StkTest.exe
+C:\Users\Administrator.HHNT178\Desktop\STK测试资料\StkTest\StkTest\obj\Debug\StkTest.pdb
+C:\Users\Administrator.HHNT178\Desktop\STK测试资料\StkTest\StkTest\bin\Debug\StkTest.exe
+C:\Users\Administrator.HHNT178\Desktop\STK测试资料\StkTest\StkTest\bin\Debug\StkTest.pdb
+C:\Users\Administrator.HHNT178\Desktop\STK测试资料\StkTest\StkTest\obj\Debug\StkTest.csprojResolveAssemblyReference.cache
+C:\Users\Administrator.HHNT178\Desktop\STK测试资料\StkTest\StkTest\obj\Debug\StkTest.Form1.resources
+C:\Users\Administrator.HHNT178\Desktop\STK测试资料\StkTest\StkTest\obj\Debug\StkTest.Properties.Resources.resources
+C:\Users\Administrator.HHNT178\Desktop\STK测试资料\StkTest\StkTest\obj\Debug\StkTest.csproj.GenerateResource.Cache
+D:\工具\StkTest\StkTest\obj\Debug\StkTest.exe
+D:\工具\StkTest\StkTest\obj\Debug\StkTest.pdb
+D:\工具\StkTest\StkTest\bin\Debug\StkTest.exe
+D:\工具\StkTest\StkTest\bin\Debug\StkTest.pdb
+D:\工具\StkTest\StkTest\obj\Debug\StkTest.csprojResolveAssemblyReference.cache
+D:\工具\StkTest\StkTest\obj\Debug\StkTest.Form1.resources
+D:\工具\StkTest\StkTest\obj\Debug\StkTest.Properties.Resources.resources
+D:\工具\StkTest\StkTest\obj\Debug\StkTest.csproj.GenerateResource.Cache
+D:\xuex\StkTest\StkTest\obj\Debug\StkTest.exe
+D:\xuex\StkTest\StkTest\obj\Debug\StkTest.pdb
+D:\xuex\StkTest\StkTest\bin\Debug\StkTest.exe
+D:\xuex\StkTest\StkTest\bin\Debug\StkTest.pdb
+D:\xuex\StkTest\StkTest\obj\Debug\StkTest.csprojResolveAssemblyReference.cache
+D:\xuex\StkTest\StkTest\obj\Debug\StkTest.Form1.resources
+D:\xuex\StkTest\StkTest\obj\Debug\StkTest.Properties.Resources.resources
+D:\xuex\StkTest\StkTest\obj\Debug\StkTest.csproj.GenerateResource.Cache

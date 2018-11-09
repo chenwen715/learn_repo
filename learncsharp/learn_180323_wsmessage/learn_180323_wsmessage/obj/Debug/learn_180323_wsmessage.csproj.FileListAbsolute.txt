@@ -1,0 +1,10 @@
+D:\xuex\learn_180323_wsmessage\learn_180323_wsmessage\bin\Debug\learn_180323_wsmessage.exe.config
+D:\xuex\learn_180323_wsmessage\learn_180323_wsmessage\bin\Debug\learn_180323_wsmessage.exe
+D:\xuex\learn_180323_wsmessage\learn_180323_wsmessage\bin\Debug\learn_180323_wsmessage.pdb
+D:\xuex\learn_180323_wsmessage\learn_180323_wsmessage\obj\Debug\learn_180323_wsmessage.csprojResolveAssemblyReference.cache
+D:\xuex\learn_180323_wsmessage\learn_180323_wsmessage\obj\Debug\learn_180323_wsmessage.Properties.Resources.resources
+D:\xuex\learn_180323_wsmessage\learn_180323_wsmessage\obj\Debug\learn_180323_wsmessage.csproj.GenerateResource.Cache
+D:\xuex\learn_180323_wsmessage\learn_180323_wsmessage\obj\Debug\learn_180323_wsmessage.exe
+D:\xuex\learn_180323_wsmessage\learn_180323_wsmessage\obj\Debug\learn_180323_wsmessage.pdb
+D:\xuex\learn_180323_wsmessage\learn_180323_wsmessage\obj\Debug\learn_180323_wsmessage.Agv.resources
+D:\xuex\learn_180323_wsmessage\learn_180323_wsmessage\obj\Debug\learn_180323_wsmessage.Station.resources

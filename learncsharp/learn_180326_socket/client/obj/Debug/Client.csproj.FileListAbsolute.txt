@@ -1,0 +1,11 @@
+D:\xuex\learn_180326_socket\client\bin\Debug\client.exe.config
+D:\xuex\learn_180326_socket\client\bin\Debug\client.exe
+D:\xuex\learn_180326_socket\client\bin\Debug\client.pdb
+D:\xuex\learn_180326_socket\client\bin\Debug\MessageTranslate.dll
+D:\xuex\learn_180326_socket\client\bin\Debug\MessageTranslate.pdb
+D:\xuex\learn_180326_socket\client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+D:\xuex\learn_180326_socket\client\obj\Debug\client.Form1.resources
+D:\xuex\learn_180326_socket\client\obj\Debug\client.Properties.Resources.resources
+D:\xuex\learn_180326_socket\client\obj\Debug\Client.csproj.GenerateResource.Cache
+D:\xuex\learn_180326_socket\client\obj\Debug\client.exe
+D:\xuex\learn_180326_socket\client\obj\Debug\client.pdb

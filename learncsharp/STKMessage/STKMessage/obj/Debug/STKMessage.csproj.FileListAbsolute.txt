@@ -1,0 +1,9 @@
+D:\xuex\STKMessage\STKMessage\bin\Debug\STKMessage.exe.config
+D:\xuex\STKMessage\STKMessage\bin\Debug\STKMessage.exe
+D:\xuex\STKMessage\STKMessage\bin\Debug\STKMessage.pdb
+D:\xuex\STKMessage\STKMessage\obj\Debug\STKMessage.csprojResolveAssemblyReference.cache
+D:\xuex\STKMessage\STKMessage\obj\Debug\STKMessage.Form1.resources
+D:\xuex\STKMessage\STKMessage\obj\Debug\STKMessage.Properties.Resources.resources
+D:\xuex\STKMessage\STKMessage\obj\Debug\STKMessage.csproj.GenerateResource.Cache
+D:\xuex\STKMessage\STKMessage\obj\Debug\STKMessage.exe
+D:\xuex\STKMessage\STKMessage\obj\Debug\STKMessage.pdb

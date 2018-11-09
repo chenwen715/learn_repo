@@ -1,0 +1,9 @@
+D:\xuex\learn_180330_Graphics\learn_180330_Graphics\bin\Debug\learn_180330_Graphics.exe.config
+D:\xuex\learn_180330_Graphics\learn_180330_Graphics\bin\Debug\learn_180330_Graphics.exe
+D:\xuex\learn_180330_Graphics\learn_180330_Graphics\bin\Debug\learn_180330_Graphics.pdb
+D:\xuex\learn_180330_Graphics\learn_180330_Graphics\obj\Debug\learn_180330_Graphics.csprojResolveAssemblyReference.cache
+D:\xuex\learn_180330_Graphics\learn_180330_Graphics\obj\Debug\learn_180330_Graphics.Form1.resources
+D:\xuex\learn_180330_Graphics\learn_180330_Graphics\obj\Debug\learn_180330_Graphics.Properties.Resources.resources
+D:\xuex\learn_180330_Graphics\learn_180330_Graphics\obj\Debug\learn_180330_Graphics.csproj.GenerateResource.Cache
+D:\xuex\learn_180330_Graphics\learn_180330_Graphics\obj\Debug\learn_180330_Graphics.exe
+D:\xuex\learn_180330_Graphics\learn_180330_Graphics\obj\Debug\learn_180330_Graphics.pdb

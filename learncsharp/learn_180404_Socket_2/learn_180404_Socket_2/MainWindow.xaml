@@ -1,0 +1,15 @@
+﻿<Window x:Class="learn_180404_Socket_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="477*"/>
+            <ColumnDefinition Width="40*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="DisplayWindow" HorizontalAlignment="Left" Height="204" Margin="39,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="431"/>
+        <TextBox x:Name="ContentBox" HorizontalAlignment="Left" Height="23" Margin="39,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="364"/>
+        <Button x:Name="sendButton" Content="send" HorizontalAlignment="Left" Margin="420,265,0,0" VerticalAlignment="Top" Width="50" Click="sendButton_Click"/>
+
+    </Grid>
+</Window>

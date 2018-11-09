@@ -1,0 +1,11 @@
+D:\xuex\learn_180314_2\learn_180314_2\bin\Debug\learn_180314_2.exe.config
+D:\xuex\learn_180314_2\learn_180314_2\bin\Debug\learn_180314_2.exe
+D:\xuex\learn_180314_2\learn_180314_2\bin\Debug\learn_180314_2.pdb
+D:\xuex\learn_180314_2\learn_180314_2\obj\Debug\learn_180314_2.csprojResolveAssemblyReference.cache
+D:\xuex\learn_180314_2\learn_180314_2\obj\Debug\learn_180314_2.Form1.resources
+D:\xuex\learn_180314_2\learn_180314_2\obj\Debug\learn_180314_2.Properties.Resources.resources
+D:\xuex\learn_180314_2\learn_180314_2\obj\Debug\learn_180314_2.csproj.GenerateResource.Cache
+D:\xuex\learn_180314_2\learn_180314_2\obj\Debug\learn_180314_2.exe
+D:\xuex\learn_180314_2\learn_180314_2\obj\Debug\learn_180314_2.pdb
+D:\xuex\learn_180314_2\learn_180314_2\obj\Debug\learn_180314_2.Form2.resources
+D:\xuex\learn_180314_2\learn_180314_2\obj\Debug\learn_180314_2.Form4.resources

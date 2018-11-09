@@ -1,0 +1,14 @@
+D:\XX\LEARN\DAY1\bin\Debug\DAY1.exe.config
+D:\XX\LEARN\DAY1\bin\Debug\DAY1.exe
+D:\XX\LEARN\DAY1\bin\Debug\DAY1.pdb
+D:\XX\LEARN\DAY1\obj\Debug\DAY1.csprojResolveAssemblyReference.cache
+D:\XX\LEARN\DAY1\obj\Debug\DAY1.exe
+D:\XX\LEARN\DAY1\obj\Debug\DAY1.pdb
+D:\xuex\LEARN\DAY1\bin\Debug\DAY1.exe.config
+D:\xuex\LEARN\DAY1\obj\Debug\DAY1.exe
+D:\xuex\LEARN\DAY1\obj\Debug\DAY1.pdb
+D:\xuex\LEARN\DAY1\bin\Debug\DAY1.exe
+D:\xuex\LEARN\DAY1\bin\Debug\DAY1.pdb
+D:\xuex\LEARN\DAY1\obj\Debug\DAY1.csprojResolveAssemblyReference.cache
+D:\xuex\LEARN\DAY1\obj\Debug\DAY1.Form1.resources
+D:\xuex\LEARN\DAY1\obj\Debug\DAY1.csproj.GenerateResource.Cache

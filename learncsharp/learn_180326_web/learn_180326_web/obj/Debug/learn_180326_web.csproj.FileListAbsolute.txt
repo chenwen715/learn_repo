@@ -1,0 +1,11 @@
+D:\xuex\learn_180326_web\learn_180326_web\bin\Debug\learn_180326_web.exe.config
+D:\xuex\learn_180326_web\learn_180326_web\bin\Debug\learn_180326_web.exe
+D:\xuex\learn_180326_web\learn_180326_web\bin\Debug\learn_180326_web.pdb
+D:\xuex\learn_180326_web\learn_180326_web\obj\Debug\learn_180326_web.csprojResolveAssemblyReference.cache
+D:\xuex\learn_180326_web\learn_180326_web\obj\Debug\learn_180326_web.Form1.resources
+D:\xuex\learn_180326_web\learn_180326_web\obj\Debug\learn_180326_web.Properties.Resources.resources
+D:\xuex\learn_180326_web\learn_180326_web\obj\Debug\learn_180326_web.csproj.GenerateResource.Cache
+D:\xuex\learn_180326_web\learn_180326_web\obj\Debug\learn_180326_web.exe
+D:\xuex\learn_180326_web\learn_180326_web\obj\Debug\learn_180326_web.pdb
+D:\xuex\learn_180326_web\learn_180326_web\obj\Debug\learn_180326_web.Form2.resources
+D:\xuex\learn_180326_web\learn_180326_web\obj\Debug\learn_180326_web.Form3.resources

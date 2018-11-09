@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <DrawingBrush x:Key="Organization" Stretch="Uniform">
+		<DrawingBrush.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing Geometry="F1 M 160,95.9999L 544,95.9999L 544,416L 160,416L 160,95.9999 Z ">
+						<GeometryDrawing.Pen>
+							<Pen LineJoin="Round" Brush="#1AFF5000"/>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1 M 224.751,225.816L 338.066,112.857L 383.25,158.183L 269.934,271.142L 224.751,225.816 Z ">
+						<GeometryDrawing.Pen>
+							<Pen Thickness="10" LineJoin="Round" Brush="#FFFFFFFF"/>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Brush="#E6FFFFFF" Geometry="F1 M 384.001,240.959L 450.863,174.307L 490.283,213.851L 423.42,280.503L 384.001,240.959 Z ">
+						<GeometryDrawing.Pen>
+							<Pen Thickness="10" LineJoin="Round" Brush="#E6FFFFFF"/>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1 M 378.718,344.456L 445.581,277.804L 485.001,317.348L 418.138,384L 378.718,344.456 Z ">
+						<GeometryDrawing.Pen>
+							<Pen Thickness="10" LineJoin="Round" Brush="#FFFFFFFF"/>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1 M 320,224L 320,236.009L 320,364">
+						<GeometryDrawing.Pen>
+							<Pen Thickness="20" LineJoin="Round" Brush="#FFFFFFFF"/>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1 M 320,237L 392.292,236.333">
+						<GeometryDrawing.Pen>
+							<Pen Thickness="20" LineJoin="Round" Brush="#FFFFFFFF"/>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1 M 320,339L 388.667,339.833">
+						<GeometryDrawing.Pen>
+							<Pen Thickness="20" LineJoin="Round" Brush="#FFFFFFFF"/>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1 M 211.708,376.25L 310.375,376.25">
+						<GeometryDrawing.Pen>
+							<Pen Thickness="20" LineJoin="Round" Brush="#E6FFFFFF"/>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1 M 241.708,352L 242.042,369.583">
+						<GeometryDrawing.Pen>
+							<Pen Thickness="20" LineJoin="Round" Brush="#E6FFFFFF"/>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1 M 282.042,352L 281.708,367.917">
+						<GeometryDrawing.Pen>
+							<Pen Thickness="20" LineJoin="Round" Brush="#E6FFFFFF"/>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Geometry="F1 M 232.042,263.917L 288,263.917L 288,332.583L 232.042,332.583L 232.042,263.917 Z ">
+						<GeometryDrawing.Pen>
+							<Pen Thickness="20" LineJoin="Round" Brush="#E6FFFFFF"/>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingBrush.Drawing>
+	</DrawingBrush>
+</ResourceDictionary>

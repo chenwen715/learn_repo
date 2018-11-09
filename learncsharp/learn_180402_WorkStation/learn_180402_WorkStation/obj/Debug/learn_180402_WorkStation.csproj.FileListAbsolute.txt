@@ -1,0 +1,13 @@
+D:\xuex\learn_180402_WorkStation\learn_180402_WorkStation\bin\Debug\learn_180402_WorkStation.exe.config
+D:\xuex\learn_180402_WorkStation\learn_180402_WorkStation\obj\Debug\learn_180402_WorkStation.csprojResolveAssemblyReference.cache
+D:\xuex\learn_180402_WorkStation\learn_180402_WorkStation\obj\Debug\MainWindow.baml
+D:\xuex\learn_180402_WorkStation\learn_180402_WorkStation\obj\Debug\MainWindow.g.cs
+D:\xuex\learn_180402_WorkStation\learn_180402_WorkStation\obj\Debug\App.g.cs
+D:\xuex\learn_180402_WorkStation\learn_180402_WorkStation\obj\Debug\learn_180402_WorkStation_MarkupCompile.cache
+D:\xuex\learn_180402_WorkStation\learn_180402_WorkStation\obj\Debug\learn_180402_WorkStation.g.resources
+D:\xuex\learn_180402_WorkStation\learn_180402_WorkStation\obj\Debug\learn_180402_WorkStation.Properties.Resources.resources
+D:\xuex\learn_180402_WorkStation\learn_180402_WorkStation\obj\Debug\learn_180402_WorkStation.csproj.GenerateResource.Cache
+D:\xuex\learn_180402_WorkStation\learn_180402_WorkStation\bin\Debug\learn_180402_WorkStation.exe
+D:\xuex\learn_180402_WorkStation\learn_180402_WorkStation\bin\Debug\learn_180402_WorkStation.pdb
+D:\xuex\learn_180402_WorkStation\learn_180402_WorkStation\obj\Debug\learn_180402_WorkStation.exe
+D:\xuex\learn_180402_WorkStation\learn_180402_WorkStation\obj\Debug\learn_180402_WorkStation.pdb

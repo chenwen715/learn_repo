@@ -1,0 +1,12 @@
+2018/3/29 10:52:03:System.ArgumentException: 只能以只写模式请求追加访问。
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 learn_180328_file.WriteLog.LogWrite(String file, String content) 位置 d:\xuex\learn_180328_file\learn_180328_file\WriteLog.cs:行号 63
+2018/3/29 10:55:53:System.ArgumentException: 只能以只写模式请求追加访问。
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 learn_180328_file.WriteLog.LogWrite(String file, String content) 位置 d:\xuex\learn_180328_file\learn_180328_file\WriteLog.cs:行号 63
+2018/3/29 13:24:43:System.ArgumentException: 只能以只写模式请求追加访问。
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   在 learn_180328_file.WriteLog.LogWrite(String file, String content) 位置 d:\xuex\learn_180328_file\learn_180328_file\WriteLog.cs:行号 63
