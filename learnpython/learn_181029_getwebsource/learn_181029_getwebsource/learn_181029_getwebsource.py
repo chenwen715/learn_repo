@@ -30,18 +30,19 @@ def parse_one_page(url):
 	html=get_one_page(url)
 	if 'wrong' not in html:
 	#re.compile将正则表达式字符串编译成正则表达式对象
+		time.sleep(0.5)
 		pattern=re.compile('<td>\s*<a\s*href=(?:\'|")(.*?)(?:\'|")>\s*(.+?)\s*<br\/?>\s*</a></td>',re.S)#re.S
 		#re.findall搜索字符串，以列表形式返回所有匹配结果
 		results=re.findall(pattern,html)
 		numb=1
-		print(time.time())
+		print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) )
 		for result in results:
 			mz=result[1].strip()
 			#t= threading.Thread(target=thread_getpro(result,url), name=mz)
 			thread_getpro(result,url)
 			print(str(numb)+"/"+str(len(results))+"......"+mz+"ok")
 			numb+=1
-		print(time.time())
+		print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) )
 		return "ok"
 	else:
 		return html
@@ -51,7 +52,9 @@ def thread_getpro(result,url):
 	#基本的语法结构：re.match(pattern,string,flags=0) 
 	website=url.replace('index',re.findall('\d+',result[0].strip())[0])
 	pro=result[1].strip()
+
 	html1=get_one_page(website)
+	time.sleep(0.5)
 	pattern1=re.compile('<td><a href=([^>]*?)>([\d]+)</a></td><td><a href=[^>]*?>([^\d]+)</a></td>',re.S)
 	results1=re.findall(pattern1,html1)
 	for result1 in results1:
@@ -63,6 +66,7 @@ def thread_getshi(result1,pro,url):
 	shiNo=result1[1].strip()
 	shi=result1[2].strip()
 	html2=get_one_page(website1)
+	time.sleep(0.5)
 	pattern2=re.compile('<td><a href=([^>]*?)>([\d]+)</a></td><td><a href=[^>]*?>([^\d]+)</a></td>',re.S)
 	results2=re.findall(pattern2,html2)
 	for result2 in results2:
@@ -72,22 +76,40 @@ def thread_getshi(result1,pro,url):
 		listall.append(list)
 
 def main():
-	url="http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2017/index.html"   
+	url="http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2017/index.html"  
+
+	str1=""
+	str1+='''IF OBJECT_ID ('dbo.T_CHINA') IS NOT NULL
+	DROP TABLE dbo.T_CHINA
+	CREATE TABLE dbo.T_CHINA
+		(
+		province NVARCHAR (50),
+		cityNo   NVARCHAR (50),
+		city     NVARCHAR (50),
+		countyNo NVARCHAR (50) NOT NULL,
+		county   NVARCHAR (50),
+		CONSTRAINT PK_T_CHINA PRIMARY KEY (countyNo)
+		)'''
+	ms = MSSQLS(driver='SQL Server Native Client 11.0',server="172.16.5.51",user="sa",password="abc123*",database="XueXi")
+	ms.ExecNonQuery(str1) 
+
 	a=parse_one_page(url)
-	str=""
+	str=""	
+	str1+=' delete from dbo.T_CHINA '
 	print(len(listall))
 	total=len(listall)
 	count=0
+	nu=10
 	if "ok" in a:
 		for detail in listall:
-			if count<=100:
+			if count<=nu:
 				count+=1
 			else:
 				count=1
 				str=""
 			total-=1
 			str+=" INSERT INTO dbo.T_CHINA (province, cityNo, city, countyNo, county) VALUES ('%s', '%s', '%s', '%s', '%s') "%(detail[0],detail[1],detail[2],detail[3],detail[4])
-			if count==101 or total==0:
+			if count==(nu+1) or total==0:
 				ms = MSSQLS(driver='SQL Server Native Client 11.0',server="172.16.5.51",user="sa",password="abc123*",database="XueXi")
 				ms.ExecNonQuery(str)
 		print("finish")
