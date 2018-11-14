@@ -1,0 +1,12 @@
+D:\上海精进\test\StateChange\StateChange\bin\Debug\StateChange.exe.config
+D:\上海精进\test\StateChange\StateChange\obj\Debug\StateChange.csprojResolveAssemblyReference.cache
+D:\上海精进\test\StateChange\StateChange\obj\Debug\StateChange.Form1.resources
+D:\上海精进\test\StateChange\StateChange\obj\Debug\StateChange.Properties.Resources.resources
+D:\上海精进\test\StateChange\StateChange\obj\Debug\StateChange.csproj.GenerateResource.Cache
+D:\上海精进\test\StateChange\StateChange\bin\Debug\StateChange.exe
+D:\上海精进\test\StateChange\StateChange\bin\Debug\StateChange.pdb
+D:\上海精进\test\StateChange\StateChange\obj\Debug\StateChange.exe
+D:\上海精进\test\StateChange\StateChange\obj\Debug\StateChange.pdb
+D:\learn\learn_repo\learncsharp\StateChange\StateChange\bin\Debug\StateChange.exe.config
+D:\learn\learn_repo\learncsharp\StateChange\StateChange\obj\Debug\StateChange.exe
+D:\learn\learn_repo\learncsharp\StateChange\StateChange\obj\Debug\StateChange.pdb
