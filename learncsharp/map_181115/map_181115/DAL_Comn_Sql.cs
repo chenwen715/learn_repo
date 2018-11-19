@@ -66,5 +66,34 @@ namespace map_181115
             sqlCm.Dispose();
             return a;
         }
+
+        ////实时监控数据库变化，有误待修改
+        //private void MonitorChange( )
+        //{
+        //    string CnString = Properties.Settings.Default.Sql;
+        //    string Cmstring = "select * from ";
+        //    SqlConnection connection = new SqlConnection(CnString);
+        //    SqlCommand command = new SqlCommand(Cmstring, connection);
+        //    command.Notification = null;//清除
+        //    connection.Open();
+        //    SqlDependency dependency = new SqlDependency(command);
+        //    dependency.OnChange += new OnChangeEventHandler(OnDependencyChange);
+        //    var sdr = command.ExecuteReader();
+        //    while (sdr.Read())
+        //    {
+        //        Console.WriteLine("");
+        //    }
+        //    sdr.Close();
+        //}
+
+        //private void OnDependencyChange(object sender, SqlNotificationEventArgs e)
+        //{
+        //    if (e.Info == SqlNotificationInfo.Insert ||
+        //    e.Info == SqlNotificationInfo.Update ||
+        //    e.Info == SqlNotificationInfo.Delete)
+        //    {
+        //        MonitorChange();
+        //    }
+        //}
     }
 }
