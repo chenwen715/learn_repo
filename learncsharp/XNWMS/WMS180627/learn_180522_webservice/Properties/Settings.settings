@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="XNWMS.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="sql" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=172.16.5.28;Initial Catalog=XNWms;Persist Security Info=True;User ID=sa;Password=abc123*</Value>
+    </Setting>
+    <Setting Name="sql1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=172.16.5.28;Initial Catalog=XinNingWms;Persist Security Info=True;User ID=sa;Password=abc123*</Value>
+    </Setting>
+    <Setting Name="sqlwcs" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=172.16.5.28;Initial Catalog=XinNingWcs;Persist Security Info=True;User ID=sa;Password=abc123*</Value>
+    </Setting>
+    <Setting Name="url" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://172.16.5.28:2000/api</Value>
+    </Setting>
+    <Setting Name="url1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://172.16.5.28:9998/api</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
