@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ContractServer" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://127.0.0.1:8080/ModelService?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://127.0.0.1:8080/ModelService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://127.0.0.1:8080/ModelService?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ModelContract_AskOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:AskOrders" />
+  </wsdl:message>
+  <wsdl:message name="ModelContract_AskOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AskOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ModelContract_NewTask_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewTask" />
+  </wsdl:message>
+  <wsdl:message name="ModelContract_NewTask_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="ModelContract_MoveBack_InputMessage">
+    <wsdl:part name="parameters" element="tns:MoveBack" />
+  </wsdl:message>
+  <wsdl:message name="ModelContract_MoveBack_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MoveBackResponse" />
+  </wsdl:message>
+  <wsdl:message name="ModelContract_PickAgain_InputMessage">
+    <wsdl:part name="parameters" element="tns:PickAgain" />
+  </wsdl:message>
+  <wsdl:message name="ModelContract_PickAgain_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PickAgainResponse" />
+  </wsdl:message>
+  <wsdl:message name="ModelContract_ManuShelfTask_InputMessage">
+    <wsdl:part name="parameters" element="tns:ManuShelfTask" />
+  </wsdl:message>
+  <wsdl:message name="ModelContract_ManuShelfTask_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ManuShelfTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="ModelContract_NewTasks_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewTasks" />
+  </wsdl:message>
+  <wsdl:message name="ModelContract_NewTasks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewTasksResponse" />
+  </wsdl:message>
+  <wsdl:message name="ModelContract_MoveOver_InputMessage">
+    <wsdl:part name="parameters" element="tns:MoveOver" />
+  </wsdl:message>
+  <wsdl:message name="ModelContract_MoveOver_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MoveOverResponse" />
+  </wsdl:message>
+  <wsdl:message name="ModelContract_CRC_InputMessage">
+    <wsdl:part name="parameters" element="tns:CRC" />
+  </wsdl:message>
+  <wsdl:message name="ModelContract_CRC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CRCResponse" />
+  </wsdl:message>
+  <wsdl:message name="ModelContract_RomoteControl_InputMessage">
+    <wsdl:part name="parameters" element="tns:RomoteControl" />
+  </wsdl:message>
+  <wsdl:message name="ModelContract_RomoteControl_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RomoteControlResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ModelContract">
+    <wsdl:operation name="AskOrders">
+      <wsdl:input wsaw:Action="http://tempuri.org/ModelContract/AskOrders" message="tns:ModelContract_AskOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ModelContract/AskOrdersResponse" message="tns:ModelContract_AskOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewTask">
+      <wsdl:input wsaw:Action="http://tempuri.org/ModelContract/NewTask" message="tns:ModelContract_NewTask_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ModelContract/NewTaskResponse" message="tns:ModelContract_NewTask_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MoveBack">
+      <wsdl:input wsaw:Action="http://tempuri.org/ModelContract/MoveBack" message="tns:ModelContract_MoveBack_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ModelContract/MoveBackResponse" message="tns:ModelContract_MoveBack_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PickAgain">
+      <wsdl:input wsaw:Action="http://tempuri.org/ModelContract/PickAgain" message="tns:ModelContract_PickAgain_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ModelContract/PickAgainResponse" message="tns:ModelContract_PickAgain_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ManuShelfTask">
+      <wsdl:input wsaw:Action="http://tempuri.org/ModelContract/ManuShelfTask" message="tns:ModelContract_ManuShelfTask_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ModelContract/ManuShelfTaskResponse" message="tns:ModelContract_ManuShelfTask_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewTasks">
+      <wsdl:input wsaw:Action="http://tempuri.org/ModelContract/NewTasks" message="tns:ModelContract_NewTasks_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ModelContract/NewTasksResponse" message="tns:ModelContract_NewTasks_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MoveOver">
+      <wsdl:input wsaw:Action="http://tempuri.org/ModelContract/MoveOver" message="tns:ModelContract_MoveOver_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ModelContract/MoveOverResponse" message="tns:ModelContract_MoveOver_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CRC">
+      <wsdl:input wsaw:Action="http://tempuri.org/ModelContract/CRC" message="tns:ModelContract_CRC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ModelContract/CRCResponse" message="tns:ModelContract_CRC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RomoteControl">
+      <wsdl:input wsaw:Action="http://tempuri.org/ModelContract/RomoteControl" message="tns:ModelContract_RomoteControl_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ModelContract/RomoteControlResponse" message="tns:ModelContract_RomoteControl_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MyEndPoint" type="tns:ModelContract">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AskOrders">
+      <soap:operation soapAction="http://tempuri.org/ModelContract/AskOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewTask">
+      <soap:operation soapAction="http://tempuri.org/ModelContract/NewTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MoveBack">
+      <soap:operation soapAction="http://tempuri.org/ModelContract/MoveBack" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PickAgain">
+      <soap:operation soapAction="http://tempuri.org/ModelContract/PickAgain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ManuShelfTask">
+      <soap:operation soapAction="http://tempuri.org/ModelContract/ManuShelfTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewTasks">
+      <soap:operation soapAction="http://tempuri.org/ModelContract/NewTasks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MoveOver">
+      <soap:operation soapAction="http://tempuri.org/ModelContract/MoveOver" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CRC">
+      <soap:operation soapAction="http://tempuri.org/ModelContract/CRC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RomoteControl">
+      <soap:operation soapAction="http://tempuri.org/ModelContract/RomoteControl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ContractServer">
+    <wsdl:port name="MyEndPoint" binding="tns:MyEndPoint">
+      <soap:address location="http://127.0.0.1:8080/ModelService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

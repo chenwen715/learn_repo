@@ -10,3 +10,6 @@ D:\xuex\learn_180313\learn_180313\obj\Debug\learn_180313.pdb
 D:\xuex\learn_180313\learn_180313\obj\Debug\learn_180313.Form2.resources
 D:\xuex\learn_180313\learn_180313\obj\Debug\learn_180313.Form5.resources
 D:\xuex\learn_180313\learn_180313\obj\Debug\learn_180313.Form7.resources
+D:\learn\learn_repo\learncsharp\learn_180313_login\learn_180313\bin\Debug\learn_180313.exe.config
+D:\learn\learn_repo\learncsharp\learn_180313_login\learn_180313\obj\Debug\learn_180313.exe
+D:\learn\learn_repo\learncsharp\learn_180313_login\learn_180313\obj\Debug\learn_180313.pdb
