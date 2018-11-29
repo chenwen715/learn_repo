@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.清除内容ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -37,6 +40,7 @@
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -50,14 +54,31 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.ContextMenuStrip = this.contextMenuStrip1;
             this.richTextBox1.Location = new System.Drawing.Point(14, 36);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(742, 159);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.清除内容ToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(125, 26);
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
+            // 
+            // 清除内容ToolStripMenuItem
+            // 
+            this.清除内容ToolStripMenuItem.Name = "清除内容ToolStripMenuItem";
+            this.清除内容ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.清除内容ToolStripMenuItem.Text = "清除内容";
+            this.清除内容ToolStripMenuItem.Click += new System.EventHandler(this.清除内容ToolStripMenuItem_Click);
+            // 
             // richTextBox2
             // 
+            this.richTextBox2.ContextMenuStrip = this.contextMenuStrip1;
             this.richTextBox2.Location = new System.Drawing.Point(12, 302);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(742, 160);
@@ -104,6 +125,7 @@
             this.radioButton3.TabIndex = 6;
             this.radioButton3.Text = "任务完成";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.Click += new System.EventHandler(this.radioButton3_Click);
             // 
             // radioButton4
             // 
@@ -143,6 +165,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,9 +179,11 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.Button button1;
         public System.Windows.Forms.RichTextBox richTextBox1;
         public System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem 清除内容ToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -29,7 +29,9 @@ namespace ACSsocket
             byte[] TaskNo = new byte[4];
             
             TaskNo = BitConverter.GetBytes(UInt32.Parse(Form2.motionL[0].sTaskNo));
-            Form1.sid = Form2.motionL[0].sTaskNo;
+            
+            //Form1.sid = Form2.motionL[0].sTaskNo;
+            Form1.agvList.Find(a => a.agvNo == agvMsg.AgvNo).sTaskList[0].taskNo = Form2.motionL[0].sTaskNo;
             
             //TaskNo = BitConverter.GetBytes(UInt32.Parse(agvMsg.SID.ToString()));
             Data[3] = TaskNo[0];
@@ -101,6 +103,7 @@ namespace ACSsocket
 
         public static byte[] GetFinishData(string agvNo)
         {
+            Form1.agvList.Find(a => a.agvNo == agvNo).sTaskList[0].taskNo = "";
             return GetData(agvNo, TypeEnum.Finish);
         }
 

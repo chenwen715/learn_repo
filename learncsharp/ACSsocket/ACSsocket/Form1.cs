@@ -10,25 +10,33 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace ACSsocket
 {
     public partial class Form1 : Form
     {
         public static Form1 f = null;
+        public static Button b = null;
+        public static List<Agv> agvList = new List<Agv>();
         public Form1()
         {
             InitializeComponent();
+            Control.CheckForIllegalCrossThreadCalls = false;
             f = this;
+            b = this.button1;            
         }
 
         public static rTypeEnum responseType = 0;
-        public static Boolean flag = true;//true允许通讯，false不允许通讯
+        public static Boolean flag = true;//true允许通讯，false不允许通讯，暂不用
         public static string sid = "";
+        public static string currentbarcode = "";
         private Thread thSocket;
         private Socket SvrSocket;
+        private Control ctrl = null;
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.StartPosition = FormStartPosition.CenterScreen;
             //和AGV通讯
             thSocket = new Thread(SocketBuild);
             thSocket.IsBackground = true;
@@ -68,6 +76,7 @@ namespace ACSsocket
             else if (radioButton3.Checked) 
             {
                 responseType = rTypeEnum.Finish;
+                radioButton1.Checked = true;
             }
             else if (radioButton4.Checked)
             {
@@ -77,15 +86,16 @@ namespace ACSsocket
             else
             {
                 responseType = 0;
-                showMessage();
+                showMessage("");
             }            
         }
 
-        public static void showMessage()
+        public static void showMessage(string agvno)
         {
-            MessageBox.Show("请选择回复报文类型");
+            MessageBoxEx.Show(Form1.f,agvno+"请选择回复报文类型");
             flag = false;
         }
+
 
         delegate void SetTextCallBack(string text);
         public static void SetText(string text)
@@ -118,8 +128,35 @@ namespace ACSsocket
         private void radioButton4_Click(object sender, EventArgs e)
         {
             Form2 form2 = new Form2();
-            form2.Show();
+            //form2.Show();
+            form2.ShowDialog(this);
+        }
 
-        } 
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+            ctrl = ((System.Windows.Forms.ContextMenuStrip)sender).SourceControl;
+        }
+
+        private void 清除内容ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ctrl.Text = "";
+            ctrl = null;
+        }
+
+        private void richTextBoxSetting()
+        {
+            richTextBox1.Focus();
+            richTextBox1.Select(richTextBox1.Text.Length, 0);
+            richTextBox1.ScrollToCaret();
+        }
+
+        private void radioButton3_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(Form1.sid))
+            {
+                MessageBoxEx.Show(this, "当前小车无任务，请重新选择回复报文");
+                radioButton1.Checked = true;
+            }
+        }
     }
 }

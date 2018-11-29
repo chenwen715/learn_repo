@@ -22,6 +22,8 @@ namespace ACSsocket
         Hashtable t = new Hashtable();
         private void Form2_Load(object sender, EventArgs e)
         {
+            this.Location=MessageBoxEx.WindowStartPoint("Form1","Form2");
+            this.StartPosition = FormStartPosition.Manual;
             string[] dtype = {"行走","顶升","下降","直接顶升","直接下降","充电","取消充电","原地旋转","左弧","右弧","旋转左弧出","旋转右弧出"};
             int dt = 1;
             foreach (string d in dtype)
@@ -31,6 +33,7 @@ namespace ACSsocket
             }
             motionL.Clear();
             textBox6.Text = Form1.sid;
+            textBox2.Text = Form1.currentbarcode;
         }
 
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
@@ -153,6 +156,7 @@ namespace ACSsocket
                     motionL.Add(m);
                 }   
                 this.Close();
+                Form1.b.PerformClick();
             }          
         }
     }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ACSsocket
 {
-    class Agv
+    public class Agv
     {
         /// <summary>
         /// 小车编号

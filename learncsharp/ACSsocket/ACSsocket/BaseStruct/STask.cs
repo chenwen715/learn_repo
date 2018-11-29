@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ACSsocket
 {
-    class STask
+    public class STask
     {
         /// <summary>
         /// 子任务排序

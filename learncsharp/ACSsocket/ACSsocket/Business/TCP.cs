@@ -19,7 +19,8 @@ namespace ACSsocket
         {
             SvrSocket.Listen(Backlog);//开始监听
 
-            while (true && Form1.flag)
+            //while (true && Form1.flag)
+            while (true)
             {
 
                 //服务器监听，建立socket
@@ -104,11 +105,13 @@ namespace ACSsocket
                 if (ClientSocket.SendData != null)
                 {
                     s.Send(ClientSocket.SendData, ClientSocket.SendData.Length, 0);
+                    TimeSpan ts1 = new TimeSpan(DateTime.Now.Ticks);
                     //string st = BitConverter.ToInt32(ClientSocket.SendData, 3).ToString();
                     string str="";
                     if (ClientSocket.SendData[2] == 0)
                     {
-                        str = " 小车：" + ClientSocket.agv.agvNo+" 功能码：" + ClientSocket.SendData[1];
+                        str = " 小车：" + ClientSocket.agv.agvNo+" 功能码：" + ClientSocket.SendData[1]
+                             + " 时间：" + ts1.Hours + ":" + ts1.Minutes + ":" + ts1.Seconds;
                     }else
                     {
                         str = " 小车：" + ClientSocket.agv.agvNo + " 功能码：" + ClientSocket.SendData[1] + " 数据长度：" + ClientSocket.SendData[2] + " 任务号：" 
@@ -119,7 +122,8 @@ namespace ACSsocket
                             + " 点属性：" + ClientSocket.SendData[21] + " 防撞方向：" + ClientSocket.SendData[22] + " 转盘属性：" + ClientSocket.SendData[23]
                             + " 码值2：" + BitConverter.ToInt32(ClientSocket.SendData, 24)
                             + " 码值3：" + BitConverter.ToInt32(ClientSocket.SendData, 40)
-                            + " 码值4：" + BitConverter.ToInt32(ClientSocket.SendData, 56);
+                            + " 码值4：" + BitConverter.ToInt32(ClientSocket.SendData, 56)
+                            + " 时间：" + ts1.Hours + ":" + ts1.Minutes + ":" + ts1.Seconds;
                     }                   
                     //string str1 = BitConverter.ToString(ClientSocket.SendData);
                     //Form1.SetText(str1 + "\n" + str + "\n");

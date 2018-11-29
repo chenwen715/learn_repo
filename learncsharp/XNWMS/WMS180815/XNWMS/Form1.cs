@@ -1893,6 +1893,7 @@ LEFT JOIN T_Biz_PNo_MiniNumber m ON m.pNo=o.PNo WHERE state=0 AND Times<{0} and 
         }
        
         #region
+        //将内容定位到插入的位置（即最新的位置）
         private void richTextBoxSetting()
         {
             richTextBox1.Focus();

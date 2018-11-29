@@ -46,15 +46,25 @@ namespace ACSsocket
                 agvMsg.SID = int.Parse(sid);
             }
             agvMsg.sTaskStatus = DataRecv[30];
-
+           
             int CrcR = DataRecv[31];
             int CrcC =CRC(DataRecv, DataLength + 14);
 
             if (CrcC == CrcR)
             {
+                UpdateAgv(agvMsg);
+                if (Form1.agvList.Find(a => a.agvNo == agvMsg.AgvNo).sTaskList[0].taskNo == "0" || string.IsNullOrEmpty(Form1.agvList.Find(a => a.agvNo == agvMsg.AgvNo).sTaskList[0].taskNo))
+                {
+                    Form1.sid = "";
+                }
+                else
+                {
+                    Form1.sid = Form1.agvList.Find(a => a.agvNo == agvMsg.AgvNo).sTaskList[0].taskNo;
+                }
+                Form1.currentbarcode = Form1.agvList.Find(a => a.agvNo == agvMsg.AgvNo).barcode;
                 if (Form1.responseType == 0)
                 {
-                    Form1.showMessage(); 
+                    Form1.showMessage(AgvNo); 
                 }
                 while  (Form1.responseType == 0)
                 {                 
@@ -87,6 +97,33 @@ namespace ACSsocket
 
 
             TCP.Send(socketOpt);
+        }
+
+        private static void UpdateAgv(AgvMsg agvMsg)
+        {
+            if (Form1.agvList.Find(a => a.agvNo == agvMsg.AgvNo) == null)
+            {
+                Agv agv = new Agv();
+                agv.agvNo = agvMsg.AgvNo;
+                agv.barcode = agvMsg.Barcode;
+                agv.currentCharge = agvMsg.Voltage;
+                agv.height = agvMsg.Height;
+                agv.sTaskList = new List<STask>();
+                STask stask = new STask();                 
+                stask.taskNo = agvMsg.SID.ToString();
+                agv.sTaskList.Add(stask);
+                agv.state = (AgvState)agvMsg.State;
+                Form1.agvList.Add(agv);
+            }
+            else
+            {
+                Agv agv = Form1.agvList.Find(a => a.agvNo == agvMsg.AgvNo);
+                agv.barcode = agvMsg.Barcode;
+                agv.currentCharge = agvMsg.Voltage;
+                agv.height = agvMsg.Height;
+                agv.sTaskList[0].taskNo = agvMsg.SID.ToString();
+                agv.state = (AgvState)agvMsg.State;
+            }
         }
 
         public static byte CRC(byte[] data, int length)
