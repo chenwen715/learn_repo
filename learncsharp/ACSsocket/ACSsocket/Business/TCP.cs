@@ -21,8 +21,7 @@ namespace ACSsocket
 
             //while (true && Form1.flag)
             while (true)
-            {
-
+            {         
                 //服务器监听，建立socket
                 Socket ClientSocket = SvrSocket.Accept();
                 ClientSocket.ReceiveTimeout = 3000;
@@ -30,7 +29,7 @@ namespace ACSsocket
                 Thread thSocket = new Thread(new ParameterizedThreadStart(DealAgvMsg));
                 //线程启动，参数为socket
                 thSocket.Start(ClientSocket);
-                //MultiSocket(ClientSocket);
+                //MultiSocket(ClientSocket);               
             }
         }
 

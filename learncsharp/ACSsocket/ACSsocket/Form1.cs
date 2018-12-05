@@ -86,13 +86,13 @@ namespace ACSsocket
             else
             {
                 responseType = 0;
-                showMessage("");
+                showMessage("", "请选择回复报文类型");
             }            
         }
 
-        public static void showMessage(string agvno)
+        public static void showMessage(string agvno,string text)
         {
-            MessageBoxEx.Show(Form1.f,agvno+"请选择回复报文类型");
+            MessageBoxEx.Show(Form1.f,agvno+text);
             flag = false;
         }
 

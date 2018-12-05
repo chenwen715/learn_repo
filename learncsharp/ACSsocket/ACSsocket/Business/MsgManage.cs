@@ -64,7 +64,7 @@ namespace ACSsocket
                 Form1.currentbarcode = Form1.agvList.Find(a => a.agvNo == agvMsg.AgvNo).barcode;
                 if (Form1.responseType == 0)
                 {
-                    Form1.showMessage(AgvNo); 
+                    Form1.showMessage(AgvNo, "请选择回复报文类型"); 
                 }
                 while  (Form1.responseType == 0)
                 {                 

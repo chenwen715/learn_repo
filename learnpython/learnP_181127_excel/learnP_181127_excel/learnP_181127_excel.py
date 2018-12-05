@@ -3,11 +3,14 @@ import xlwt
 import xlutils
 from xlrd import sheet
 from builtins import zip
+from xlutils.copy import copy
+from xlwt.Style import easyxf
 
 def getExcelColData(filepath,col=-1,sheet=0):
 	'''
 	获取特定sheet页特定列数据
 	参数filepath：文件路径
+	参数workbook：工作簿
 	参数col:获取哪一列数据，可输入数字或字符串，不输入时以dict形式返回所有列数据
 			输入参数类型不正确时，返回错误信息"wrong:[sheet]参数输入错误，应输入数字或sheet页名称"
 	参数sheet:获取哪一sheet页的数据，可输入数字或字符串，默认获取第一个sheet页的数据
@@ -71,13 +74,22 @@ def getExcelRowData(filepath,sheet=0):
 		rowdata=dict(zip(attrname,rdata))
 		data.append(rowdata)
 	return data
-		
+
+def formatCell(cell):
+	pass
 
 if __name__=="__main__":
-	filepath="C:\\Users\\0322\\Desktop\\WarehouseData.xlsx"
-	a=getExcelColData(filepath)
-	print(a)
-	b=getExcelRowData(filepath)
-	for i in b:
-		print(i)
+	filepath="D:\learn\learn_repo\learnpython\learnP_181127_excel\color.xls"
+	a=getExcelColData(filepath,"color")
+	file=xlrd.open_workbook(filepath,formatting_info=True)
+	wb=copy(file)
+	ws=wb.get_sheet(0)
+	for co in a:
+		row=a.index(co)
+		ws.row(row+1).set_cell_blank(1,easyxf("pattern: pattern SOLID_PATTERN,fore-color %s;"%co))
+	wb.save(filepath)
+	#print(a)
+	#b=getExcelRowData(filepath)
+	#for i in b:
+	#	print(i)
 
