@@ -15,6 +15,8 @@ from xlutils.copy import copy
 #from openpyxl.writer.excel import ExcelWriter
 from xlwt.Style import easyxf
 import datetime
+import re
+import logging
 
 #整个文件的开始和结束执行
 def setUpModule():
@@ -27,9 +29,9 @@ def tearDowmModule():
 @ddt
 class interfaceTestCase(unittest.TestCase):
 	global requestdata
-	requestdata=learnP_181127_excel.getExcelRowData('D:\\learn\\learn_repo\\learnpython\\learnP_181129_interface\\data2003.xls')[:]
+	requestdata=learnP_181127_excel.getExcelRowData('D:\\learn\\learn_repo\\learnpython\\learnP_181129_interface\\data2003.xls')[:2]
 
-	#整个Test类的开始和结束执行
+	#整个Test类的开始和结束执行，必须在方法上加@classmethod的装饰器
 	@classmethod
 	def setUpClass(cls):
 		print("开始执行测试类")
@@ -67,14 +69,18 @@ class interfaceTestCase(unittest.TestCase):
 	
 	#每个用例的开始和结束执行
 	def setUp(self):
-		print("Test start============>")
+		print(self.id())#输出__main__.类名.方法名
+		print(self._testMethodName+":============>Test start")
 
 	def tearDown(self):
-		print("Test finish============>")
-
-	#@unittest.skip("暂时跳过")#用于跳过测试用例
-	@data(*requestdata)
+		print(self._testMethodName+":============>Test finish")
+	
+	#@unittest.skipIf(False,"暂时跳过")#用于跳过指定条件的测试用例
+	#@unittest.skipUnless(True,"暂时跳过")#用于跳过指定条件的测试用例
+	#@unittest.skip("暂时跳过")#用于跳过测试用例		
+	@data(*requestdata)#装饰器需紧跟方法，即写在方法上，中间无其他内容
 	def test_data(self,requestdata):
+		"""使用ddt库测试"""
 		self.data=requestdata
 		url=requestdata["url"]
 		method=requestdata["method"]
@@ -89,34 +95,162 @@ class interfaceTestCase(unittest.TestCase):
 		requestdata["actualcode"]=rejson["code"]
 		requestdata["text"]=rejson["text"]
 		requestdata["time"]=datetime.datetime.now()
-		try:
-			self.assertEqual(expectcode,rejson["code"],msg="code有误：预期%s，实际%s"%(expectcode,rejson["code"]))
-			requestdata["result"]=True
-		except:
-			requestdata["result"]=False
-			return False
+		#try:
+		#	self.assertEqual(expectcode,rejson["code"],msg="code有误：预期%s，实际%s"%(expectcode,rejson["code"]))
+		#	requestdata["result"]=True
+		#except:
+		#	requestdata["result"]=False
+		#	#return False
+		#self.longMessage=False	#self.longMessage默认为True，表明将下面方法的msg加到默认信息后面，改为False，则msg覆盖默认信息
+		self.assertEqual(expectcode,rejson["code"],msg="code有误：预期%s，实际%s"%(expectcode,rejson["code"]))
+		self.data["result"]=True
+
 	
-if __name__=="__main__":
+	@unittest.skip("暂时跳过")#用于跳过测试用例
+	def test_subtest(self):
+		"""使用子类测试"""
+		for request in requestdata:
+			with self.subTest(request=request):	
+				print(self._testMethodName+str(request["ID"])+":==============start")
+				self.data=request		
+				url=request["url"]
+				method=request["method"]
+				param=dict(zip(["key","info","userid"],[request["key"],request["info"],request["userid"]]))
+				expectcode=(int)(request["expectcode"])
+				#response=requests.request(method,url=url,params=param)
+				#rejson=json.loads(response.text)
+				if method=="POST":
+					rejson=requestMethod.requestMethod().post(url,param)
+				self.data["actualcode"]=rejson["code"]
+				self.data["text"]=rejson["text"]
+				request["actualcode"]=rejson["code"]
+				request["text"]=rejson["text"]
+				request["time"]=datetime.datetime.now()
+				self.assertEqual(expectcode,rejson["code"],msg="code有误：预期%s，实际%s"%(expectcode,rejson["code"]))
+				request["result"]=True
+				print(self._testMethodName+str(request["ID"])+":==============end")
+
+	
+	#@unittest.expectedFailure
+	#def test_fail(self):
+	#	'''
+	#	预期失败，不计入测试不通过数量中
+	#	'''
+	#	with self.assertLogs('foo', level='INFO') as cm:
+	#	   logging.getLogger('foo').info('first message')#getLogger：名称
+	#	   logging.getLogger('foo.bar').error('second message')
+	#	   print(cm.output[1])#log内容
+	#	   print(cm.records[1])#log出现在哪个文件的第几行
+	#	self.assertEqual(cm.output, ['INFO:foo:first message',
+	#								 'ERROR:foo.bar:second message'])	 
+	#	self.assertEqual(1,0,"excepted failure")
+
+def discoverTestCase():	
+	'''
+		打印当前文件中的特定测试方法的名称
+	'''
+	allTestCaseName=[]
+	discover=unittest.defaultTestLoader.discover(".","learnP_181129_interface.py")
+	for suite in discover:
+		for tc in suite:
+			#print(tc)
+			pattern=re.compile("testMethod=(test_data.*?)>")
+			result=pattern.findall(str(tc))
+			#for r in result:
+			#	allTestCaseName.append(r)
+			allTestCaseName.extend(result)
+	return allTestCaseName
+
+def skipUnlessHasAttr(obj,attr):
+	'''
+		自定义一个跳过装饰器
+	'''	
+	if hasattr(obj,attr):
+		return lambda func:func
+	else:
+		return unittest.skip("{!r} doesn't have {!r}".format(obj, attr))
+
+def suite(TestCase,*CaseName):
+	'''
+	组合测试用例，返回一个testsuite（测试套件）
+	'''
 	suite = unittest.TestSuite()
 	# 测试用例加载器
-	loader = unittest.TestLoader()
-	# 把测试用例加载到测试套件中
-	suite.addTests(loader.loadTestsFromTestCase(interfaceTestCase))
-	# 测试用例执行器
-	#runner = HTMLReport.TestRunner(
-	#						   #report_file_name='test',  # 报告文件名，如果未赋值，将采用“test+时间戳”
- #                              output_path='report',  # 保存文件夹名，默认“report”
- #                              title='测试报告',  # 报告标题，默认“测试报告”
- #                              description='无测试描述',  # 报告描述，默认“测试描述”
- #                              thread_count=1,  # 并发线程数量（无序执行测试），默认数量 1
- #                              thread_start_wait=3,  # 各线程启动延迟，默认 0 s
- #                              sequential_execution=False,  # 是否按照套件添加(addTests)顺序执行，
- #                              # 会等待一个addTests执行完成，再执行下一个，默认 False
- #                              # 如果用例中存在 tearDownClass ，建议设置为True，
- #                              # 否则 tearDownClass 将会在所有用例线程执行完后才会执行。
- #                              # lang='en'
- #                              lang='cn'  # 支持中文与英文，默认中文
- #                              )
-	## 执行测试用例套件
-	runner=unittest.TextTestRunner()
-	runner.run(suite)
+	if len(CaseName)==0:
+		loader = unittest.TestLoader()
+		# 把测试用例加载到测试套件中
+		suite.addTests(loader.loadTestsFromTestCase(TestCase))
+	else:
+		for tc in CaseName:
+			if isinstance(tc,str):
+				suite.addTest(TestCase(tc))
+			elif isinstance(tc,list):
+				for tc1 in tc:
+					suite.addTest(TestCase(tc1))
+	return suite
+
+def printInfo(result):
+	'''打印结果相关数据'''
+	print("[errors]:"+str(result.errors))
+	print("[failures]:"+str(result.failures))
+	print("[skipped]:"+str(result.skipped))
+	print("[expectedFailures]:"+str(result.expectedFailures))
+	print("[testsRun]:"+str(result.testsRun))
+
+
+def runTest():
+	runner = HTMLReport.TestRunner(
+							   #report_file_name='test',  # 报告文件名，如果未赋值，将采用“test+时间戳”
+                               output_path='report',  # 保存文件夹名，默认“report”
+                               title='测试报告',  # 报告标题，默认“测试报告”
+                               description='无测试描述',  # 报告描述，默认“测试描述”
+                               thread_count=1,  # 并发线程数量（无序执行测试），默认数量 1
+                               thread_start_wait=3,  # 各线程启动延迟，默认 0 s
+                               sequential_execution=False,  # 是否按照套件添加(addTests)顺序执行，
+                               # 会等待一个addTests执行完成，再执行下一个，默认 False
+                               # 如果用例中存在 tearDownClass ，建议设置为True，
+                               # 否则 tearDownClass 将会在所有用例线程执行完后才会执行。
+                               # lang='en'
+                               lang='cn'  # 支持中文与英文，默认中文
+                               )
+	return runner
+
+
+	
+if __name__=="__main__":
+	#suite = unittest.TestSuite()
+	## 测试用例加载器
+	#loader = unittest.TestLoader()
+	## 把测试用例加载到测试套件中
+	#suite.addTests(loader.loadTestsFromTestCase(interfaceTestCase))
+
+
+	#name=discoverTestCase()
+	#suite =suite(interfaceTestCase,name)
+	#suite =suite(interfaceTestCase,name,"test_fail")
+
+	suite =suite(interfaceTestCase)
+
+	
+	#runner=unittest.TextTestRunner()
+	## 测试用例执行器
+	runner = HTMLReport.TestRunner(
+							   #report_file_name='test',  # 报告文件名，如果未赋值，将采用“test+时间戳”
+                               output_path='report',  # 保存文件夹名，默认“report”
+                               title='测试报告',  # 报告标题，默认“测试报告”
+                               description='无测试描述',  # 报告描述，默认“测试描述”
+                               thread_count=1,  # 并发线程数量（无序执行测试），默认数量 1
+                               thread_start_wait=3,  # 各线程启动延迟，默认 0 s
+                               sequential_execution=False,  # 是否按照套件添加(addTests)顺序执行，
+                               # 会等待一个addTests执行完成，再执行下一个，默认 False
+                               # 如果用例中存在 tearDownClass ，建议设置为True，
+                               # 否则 tearDownClass 将会在所有用例线程执行完后才会执行。
+                               # lang='en'
+                               lang='cn'  # 支持中文与英文，默认中文
+                               )
+ # 执行测试用例套件
+	result=runner.run(suite)
+	printInfo(result)
+
+	#unittest.main()
+	
