@@ -1,0 +1,1 @@
+wsimport -d d: -keep -p com.test.ws -verbose http://172.16.1.203/service?wsdl
